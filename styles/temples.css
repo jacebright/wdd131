@@ -50,7 +50,7 @@ header {
 nav a:hover, .navigation a:active {
 	font-weight: 700;
 	text-decoration: underline;
-	text-decoration-color: var(--accent);
+	text-decoration-color: var(--font);
 }
 
 .show li {
