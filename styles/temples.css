@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+:root {
+    --heading-font: 'Oswald', serif;
+    --paragraph-font: 'Roboto Slab', serif;
+
+    --background: #65655E;
+    --border: #EF6F6C;
+    --font: #FBFFF1;
+    --navigation: #00A5CF;
+    --accent: #3D52D5;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    color: var(--font);
+    background-color: var(--background);
+    font-family: var(--paragraph-font);
+    text-align: center;
+    
+}
+
+header {
+    background-color: var(--accent);
+    font-family: var(--heading-font);
+}
+
+#menu {
+    display: block;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--navigation);
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation {
+    background-color: var(--accent);
+}
+
+.navigation li {
+    display: none;
+}
+
+nav a:hover, .navigation a:active {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: var(--accent);
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+main {
+    max-width: 950px;
+    margin: auto;
+    align-items: center;
+    grid-template-columns: auto;
+}
+
+#photos {
+    grid-template-columns: auto;
+    display: grid;
+}
+
+figure {
+    /* width: fit-content; */
+    align-content: center;
+}
+
+figure, img, figcaption{
+    padding: 10px;
+    max-width: 100%;
+    width: auto;
+}
+
+footer {
+    background: var(--accent);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 25px;
+}
