@@ -53,6 +53,10 @@ h2 {
     text-align: center;
 }
 
+#weather h2::after {
+    content: url(/images/weather.svg);
+}
+
 footer {
     font-size: 1.1rem;
     font-weight: 700;
@@ -79,6 +83,10 @@ footer {
         margin: 20px;
         padding: 10px;
         height: fit-content;
+    }
+
+    #weather h2::after {
+        content: "☀️";
     }
 
     #weather {
