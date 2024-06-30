@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <meta name="author" content="Jace Bright">
+    <title>Place</title>
+</head>
+<body>
+    <header>
+        <h1>Venezuela</h1>
+    </header>
+    <main>
+        <picture id="heroImage">
+            <source srcset="images/arepas.webp" media="(min-width: 550px)">
+            <img src="images/ocean.webp" alt="Venezuelan View">
+        </picture>
+        <section id="data">
+            <h2>Data</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="label">Area:</td>
+                        <td>353,841 sq mi</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Population:</td>
+                        <td>28,300,000</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Capital:</td>
+                        <td>Caracas</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Language:</td>
+                        <td>Spanish</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Currency:</td>
+                        <td>Venezuelan Bolívar</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Time Zone:</td>
+                        <td>GMT-4</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Calling Code:</td>
+                        <td>+58</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Internet TLD:</td>
+                        <td>.VE</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <h2>☀️</h2>
+            <table>
+                <tr>
+                    <td class="label">Temperature:</td>
+                    <td><span id="temperature"></span>° C</td>
+                </tr>
+                <tr>
+                    <td class="label">Conditions:</td>
+                    <td><span id="conditions"></span></td>
+                </tr>
+                <tr>
+                    <td class="label">Wind:</td>
+                    <td><span id="wind"></span> km/h</td>
+                </tr>
+                <tr>
+                    <td class="label">Wind Chill:</td>
+                    <td><span id="windChill"></span></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span>♟️Jace Bright♟️Texas, USA</p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
