@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Basic review form">
+<meta name="author" content="Jace Bright">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>WDD131 Form - Jace Bright</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="styles/form.css">
+<script src="scripts/form.js" defer></script>
+
+
+     
+</head>
+<body>
+	<header>
+        <h1>Product Review</h1>
+    </header>
+ 
+    
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <label>Product Name
+                    <select id="productName" name="product" required>
+                        <option value="" disabled selected>Choose a Product ...&#9662</option>
+                    </select></label>
+
+                <div>Overall Rating</div>
+                <section id="overall">
+                    <label>☆<input type="radio" name="overall" value="one"></label>
+                    <label>☆☆<input type="radio" name="overall" value="two"></label>
+                    <label>☆☆☆<input type="radio" name="overall" value="three"></label>
+                    <label>☆☆☆☆<input type="radio" name="overall" value="four"></label>
+                    <label>☆☆☆☆☆<input type="radio" name="overall" value="five"></label>
+                </section>
+                    <label>Date of Installation <div></div>
+                        <input type="date" name="installDate"></label>
+                <div>Which features did you find useful in the product?</div>
+                <div>(Check all that apply)</div>
+                <label><input type="checkbox" name="durability" value="yes" > Durability</label>
+                <label><input type="checkbox" name="ease" value="yes" > Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes" > Performance</label>
+                <label><input type="checkbox" name="design" value="yes" > Design</label>
+
+                <div>Written Review (Optional)</div>
+                <label><textarea id="written" name="textReview"></textarea></label>
+
+                <div>Your Name (Optional)</div>
+                <label><input type="text" id="userName" name="yourName"></label>
+
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+        
+    <footer>
+        <p>©️<span id="currentyear"></span>♟️Jace Bright♟️Texas, USA</p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
