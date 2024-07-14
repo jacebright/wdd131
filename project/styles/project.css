@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Titillium+Web&display=swap');
+:root {
+    --primary-color: #993955;
+    --secondary-color: #3D5A6C;
+    --font-color: #D7FCD4;
+    --background-color: #B6CCA1;
+    --accent-color: #201E1F;
+
+    --header-font: 'Bebas Neue', serif;
+    --paragraph-font: 'Titillium Web', serif;
+    --additional-text-font: 'Amatic SC', serif;
+}
+
+h1, h2 {
+    font-family: var(--header-font);
+    color: var(--font-color);
+    text-align: center;
+    text-shadow: var(--accent-color) 1px 0 7px;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+body {
+    background: var(--background-color);
+}
+
+main {
+    background: var(--primary-color);
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 10px;
+    border: double 15px var(--secondary-color);
+}
+
+p, h3 {
+    color: var(--font-color);
+    font-family: var(--paragraph-font);
+}
+
+#information {
+    font-family: var(--additional-text-font);
+    font-size: 20px;
+}
+
+img {
+    width: 70%;
+    height: auto;
+}
