@@ -29,7 +29,7 @@ let signUp = Number(window.localStorage.getItem("signUp-ls")) || 0;
 
 navLink.addEventListener("click", () => {
     if (signUp > 0) {
-        window.location.href("thanks.html")
+        window.location.href("https://jacebright.github.io/wdd131/project/thanks.html")
     }
 })
 

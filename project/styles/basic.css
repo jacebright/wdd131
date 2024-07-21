@@ -240,3 +240,9 @@ section img {
     border: 5px double var(--primary-color);
     grid-column: 4 / -1;
 }
+
+/* Newsletter Page */
+
+#newsletterMain {
+    max-width: 560px;
+}
