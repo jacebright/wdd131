@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Titillium+Web&display=swap');
+:root {
+    --primary-color: #993955;
+    --secondary-color: #3D5A6C;
+    --font-color: #D7FCD4;
+    --background-color: #B6CCA1;
+    --accent-color: #201E1F;
+
+    --header-font: 'Bebas Neue', serif;
+    --paragraph-font: 'Titillium Web', serif;
+    --additional-text-font: 'Amatic SC', serif;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf1 label, .wf1 div{
+    display: block;
+    padding-top: 1rem;
+    color: var(--font-color);
+    font-size: 1.2rem;
+}
+
+.wf1 input[type="text"], 
+.wf1 input[type="tel"],
+.wf1 input[type="email"]{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 4px;
+    color: #555;
+    width: 100%;
+    height: 44px;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf1 .checkbox {
+    font-size: .9rem;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--background-color), var(--background-color));
+    color: var(--primary-color);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 15px auto;
+    box-shadow: 1px 1px 4px #999;
+    border: solid 2px var(--background-color);
+}
+
+
+.wf1 input[type="submit"]:hover {
+    font-weight: 700;
+    border: solid 2px var(--accent-color);
+}

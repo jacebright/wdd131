@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jace Bright" >
+    <meta name="description" content="Sign-up form for the monthly newsletter for the Crowley Public Library.">
+    <title>WDD 131 - Crowley Library Newsletter Sign-up - Jace Bright</title>
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/basic.js" defer></script>
+    <script src="scripts/newsletter.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Newsletter Sign-up</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="summer.html" title="SummerProgram">☀️Summer Programs☀️</a></li>
+                <li><a id="newsletterLink" href="newsletter.html" title="Newsletter">Newsletter Sign-up!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Monthly Newsletter Sign-up</h2>
+        <p>Sign-up for our monthly newsletter for regular updates, book suggestions, and latest news on upcoming programs!</p>
+        <form method="get" action="thanks.html" class="wf1">
+            <label>First Name* <input type="text" name="fname" required></label>
+            <label>Last Name* <input type="text" name="lname" required></label>
+            <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <div>Programs of Interest</div>
+            <label class="checkbox"><input type="checkbox" name="club" value="yes"> Book Club</label>
+            <label class="checkbox"><input type="checkbox" name="kid" value="yes"> Kids Books</label>
+            <label class="checkbox"><input type="checkbox" name="seasonal" value="yes"> Seasonal Programs</label>
+            <label class="checkbox"><input type="checkbox" name="teen" value="yes"> Teen Books</label>
+            <label class="checkbox"><input type="checkbox" name="adult" value="yes"> Young Adult Books</label>                
+            <input id="submitButton" type="submit" value="Sign Me Up!">
+        </form>
+
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span>♟️Jace Bright♟️Texas, USA</p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>    
+</body>
+</html>

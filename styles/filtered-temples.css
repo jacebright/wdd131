@@ -79,7 +79,6 @@ main {
 }
 
 section {
-    /* width: fit-content; */
     align-content: center;
     background-color: var(--font);
     margin: 5px;
