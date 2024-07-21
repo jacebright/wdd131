@@ -22,12 +22,13 @@ hambutton.addEventListener("click", () => {
 // newsletter previously and will forward them to the thank you page if they
 // have done so
 
-const navLink = document.getElementById("newsletterLink");
+const navLink = document.querySelector("#newsletterLink");
 
 
-let signUp = Number(window.localStorage.getItem("signUp-ls")) || 0;
+
 
 navLink.addEventListener("click", () => {
+    let signUp = Number(window.localStorage.getItem("signUp-ls")) || 0;
     if (signUp > 0) {
         window.location.href("https://jacebright.github.io/wdd131/project/thanks.html")
     }

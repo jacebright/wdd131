@@ -1,6 +1,6 @@
-const submitButton = document.getElementById("submitButton");
+const submitButton = document.querySelector("#submitButton");
 
 submitButton.addEventListener("click", () => {
-    signUp++;
+    let signUp = 1;
     localStorage.setItem("signUp-ls", signUp);
 })
